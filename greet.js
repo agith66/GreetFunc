@@ -1,9 +1,8 @@
+const fs = require('fs');
+
 function startApp() {
-    console.log("Hello, this is a greeting func test");
+    const config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
+    console.log(config.greetingMessage);
 }
 
-function greetUser(name) {
-    console.log(`Hello, ${name}! Welcome to the project.`);
-}
-
-greetUser("Collaborator");
+startApp();
