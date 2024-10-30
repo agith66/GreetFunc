@@ -1,9 +1,13 @@
+// app.js
+const fs = require('fs');
+
 function startApp() {
-    console.log("Hello, this is a greeting func test");
+    try {
+        const config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
+        console.log(config.greetingMessage);
+    } catch (error) {
+        console.error("Error reading configuration file:", error.message);
+    }
 }
 
-function greetUser(name) {
-    console.log(`Hello, ${name}! Welcome to the project.`);
-}
-
-greetUser("Collaborator");
+startApp();
