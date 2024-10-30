@@ -8,13 +8,14 @@ function logMessage(message) {
 }
 
 function startApp() {
-    let name = process.argv[2] || "Collaborator";
-    let customMessage = process.argv[3];
+    let name = process.argv[2] || "Contributor";
+    let customMessage = "testing the greet func";
 
     try {
         const config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
         const greetingMessage = customMessage || config.greetingMessage;
         const message = `${greetingMessage}, ${name}!`;
+        console.log("Welcome Bro"),
         console.log(message);
         logMessage(message);
     } catch (error) {
