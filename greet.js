@@ -1,10 +1,9 @@
-// app.js
 const fs = require('fs');
+const X = require('./config');
 
 function startApp() {
     try {
-        const config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
-        console.log(config.greetingMessage);
+        console.log(config.GREET);
     } catch (error) {
         console.error("Error reading configuration file:", error.message);
     }
