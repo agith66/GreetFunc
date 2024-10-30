@@ -1,5 +1,9 @@
 function startApp() {
-    console.log("Hello");
+    console.log("Hello, this is a greeting func test");
 }
 
-startApp();
+function greetUser(name) {
+    console.log(`Hello, ${name}! Welcome to the project.`);
+}
+
+greetUser("Collaborator");
