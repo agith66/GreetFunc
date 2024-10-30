@@ -1,10 +1,12 @@
 # My Collaboration Project
 
-This is a simple JavaScript project created for collaboration purposes. 
+This is a simple JavaScript project created for collaboration purposes.
 
-## New Feature: Greet a User
+## Features
 
-You can now greet a user by name! Just pass the name to the `greetUser` function in `app.js`.
+- Greets a user by name.
+- Customizable greeting message through `config.js`.
+- Error handling for missing or invalid configuration file.
 
 ## Getting Started
 
