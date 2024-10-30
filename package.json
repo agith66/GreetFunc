@@ -1,0 +1,16 @@
+{
+  "name": "greetfunc",
+  "version": "1.0.0",
+  "description": "A simple greeting package that customizes messages based on input names and languages.",
+  "main": "greet.js",
+  "scripts": {
+    "start": "node greet.js",
+    "test": "jest"
+  },
+  "keywords": ["greeting", "custom message", "personalized"],
+  "author": "agith bro enter ur name here🙂",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.0.0" 
+  }
+}
