@@ -14,6 +14,9 @@ All greetings are now logged in a `log.txt` file with timestamps. This feature a
 
 The log file is automatically created in the project directory.
  
+## Testing
+
+This project includes a basic test suite to ensure functionality works as expected. Run tests with:
 
 ## Getting Started
 
